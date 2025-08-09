@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "media_links",
+  "info": {
+    "singularName": "media-link",
+    "pluralName": "media-links",
+    "displayName": "Media Link",
+    "description": "External media links and resources"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": ["video", "article", "podcast", "website"],
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "tags": {
+      "type": "json"
+    }
+  }
+}
